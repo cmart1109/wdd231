@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/larger.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <img src="images/logo.svg" alt="site logo" width="20" height="20">
+        <span>The Site Name</span>
+        <button id="nav-button" class="hamburguer" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">News & Events</a></li>
+            <li><a href="#">Dedicated Temples</a></li>
+            <li><a href="#">Announced Temples</a></li>
+        </ul>
+    </nav>
+    <script src="./scripts/home.js"></script>
 </body>
 </html>
