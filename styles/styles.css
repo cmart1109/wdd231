@@ -56,9 +56,9 @@ main {
     min-height: 80vh;
 }
 
-footer {
+.footer-black {
     background-color: var(--primary-color);
-    height: 11vh;
+    height: 8vh;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -66,6 +66,5 @@ footer {
 }
 
 footer img {
-    filter: invert(1);
     margin: 10px;
 }
