@@ -60,12 +60,22 @@ h3 {
 }
 
 #nav-bar.show {
-    display: block;
-    
+    display: block;   
 }
-.navigation ul {
+
+.about-me p {
+    padding: 10px;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    border: 1px solid transparent;
+}
+
+.links-box {
     list-style-type: none;
-    padding: 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
 }
