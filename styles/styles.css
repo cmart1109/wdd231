@@ -5,6 +5,10 @@
     --white: #ffffff;
 }
 
+body {
+    font-family: 'DM Sans','Courier New';
+}
+
 header {
     display: grid;
     grid-template-columns: 40px auto 44px;
