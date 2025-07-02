@@ -19,7 +19,7 @@
         display: none;
     }
 
-    .navigation li {
+    .navigation a {
     padding: 0;
     text-align: center;
     background-color: var(--primary-color);
