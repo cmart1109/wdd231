@@ -4,12 +4,30 @@
     }
     .navigation ul {
         display: flex;
-        justify-content: space-around;
-        padding: 10px;
     }
 
     .hamburguer{
         display: none;
     }
+
+    .navigation li {
+    padding: 0;
+    text-align: center;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    margin: 5px;
+    }
+
+    .navigation ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .student-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+    
 }
 
