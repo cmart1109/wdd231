@@ -1,6 +1,6 @@
 :root {
     --primary-color: #2c2c2e;
-    --secondary-color: #59595a;
+  --secondary-color: #b3b3b3;
     --tertiary-color: #7d5ba6;
     --white: #ffffff;
 }
@@ -36,9 +36,13 @@ body {
     margin-right: 1rem;
 }
 
-.student-info h3 {
+h3 {
     background-color: var(--primary-color);
     padding: 10px;
+}
+
+.certi-h3 {
+    margin-top: 15px;
 }
 
 
@@ -84,16 +88,61 @@ main {
     margin: 1rem;
 }
 
+.web-courses nav {
+    display: flex;
+    justify-content: space-around;
+}
+.web-courses nav button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    margin: 1px;
+    border-radius: 10px;
+    transition: background-color  0.1s ease-in-out;
+}
+
+.web-courses nav button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
 
 
 .footer-black {
     background-color: var(--primary-color);
     height: 8vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 10px;
     color: white;
+}
+.courses {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.courses div {
+        background-color: var(--secondary-color);
+        padding: 10px;
+        width: 90%;
+        text-align: center;
+        margin: 5px;
+        border: 1px solid;
+    }
+
+.social-container {
+    display: flex;
+    justify-content: center;
+}
+
+.certificates {
+    text-align: center;
 }
 
 footer img {
