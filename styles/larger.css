@@ -12,7 +12,7 @@
         display: block;
     }
     .navigation ul {
-        display: flex;
+        flex-direction: row;
     }
 
     .hamburguer{
