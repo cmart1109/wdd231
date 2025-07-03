@@ -113,15 +113,10 @@ main {
     border: none;
     outline: none;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     margin: 1px;
     border-radius: 10px;
-    transition: background-color  0.1s ease-in-out;
-}
-
-.web-courses nav button:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    cursor: pointer;
 }
 
 
