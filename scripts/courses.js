@@ -41,7 +41,7 @@ const coursesContainer = document.querySelector('.courses');
 const allButton = document.querySelector(".all-button");
 const cseButton = document.querySelector(".cse-button");
 const wddButton = document.querySelector(".wdd-button");
-const creditsMessage = document.querySelector("credits-indicator")
+const creditsMessage = document.querySelector(".credits-indicator")
 let credits;
 
 function getCourses(coursesArray) {
@@ -49,15 +49,18 @@ function getCourses(coursesArray) {
         const courseBox = document.createElement("div");
         courseBox.textContent = `${course.type}-${course.code}`;
         coursesContainer.appendChild(courseBox)
+        credits+= 2;
     });
+    showCredits();
 }
 
 function showCredits() {
-    creditsMessage.textContent = `The numer of credits listed`;
+    creditsMessage.textContent = `The numer of credits listed above is ${credits}`;
 }
 
 function clearCourses() {
     coursesContainer.innerHTML = "";
+    credits = 0;
 }
 
 function getAllCourses(coursesArray) {
