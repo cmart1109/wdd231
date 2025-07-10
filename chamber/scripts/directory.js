@@ -1,5 +1,7 @@
 const container = document.querySelector('.business-container');
 const data = "./data/members.json";
+const gridButton = document.getElementById('toggle-grid');
+const tableButton = document.getElementById('toggle-table');
 
 async function fetchData() {
     try {
@@ -8,13 +10,17 @@ async function fetchData() {
             throw new Error('Network response was not ok');
         }
         const members = await response.json();
-        displayMembers(members.members);
+        return members.members;
     } catch (error) {
         console.error('There has been a problem with your fetch operation:', error);
     }
 }
 
-function displayMembers(members) {
+function displayGridMembers(members) {
+    clearContainer();
+    container.classList.remove("table");
+    container.classList.add("grid");
+
     members.forEach(member => {
         const card = document.createElement('section');
         card.classList.add('card');
@@ -36,4 +42,53 @@ function displayMembers(members) {
     });
 }
 
-fetchData();
+function displayTableMembers(members) {
+    clearContainer();
+    container.classList.add("table");
+    container.classList.remove("grid");
+    
+    let table = document.createElement("table");
+    let body = document.createElement("tbody");
+    table.appendChild(body);
+    members.forEach(member => {
+        let row = document.createElement("tr");
+        let nameCell = document.createElement("td");
+        let addressCell = document.createElement("td");
+        let phoneCell = document.createElement("td");
+        let linkCell = document.createElement("td");
+        let websiteURL = document.createElement("a");
+        websiteURL.setAttribute("href", member.url);
+        websiteURL.textContent = `Website: ${member.url}`;
+        linkCell.appendChild(websiteURL);
+        nameCell.textContent = member.name;
+        addressCell.textContent = member.address;
+        phoneCell.textContent = member.phone;
+        row.appendChild(nameCell);
+        row.appendChild(addressCell);
+        row.appendChild(phoneCell);
+        row.appendChild(linkCell);
+        table.appendChild(row);
+        container.appendChild(table);
+    });
+}
+
+function clearContainer() {
+    container.innerHTML = ""
+}
+
+gridButton.addEventListener('click', async () => {
+    let data = await fetchData();
+    displayGridMembers(data);
+    console.log("you are clicking the table button");
+})
+
+tableButton.addEventListener('click', async () => {
+    let data = await fetchData();
+    displayTableMembers(data)
+    console.log("you are clicking the table button");
+})
+
+document.addEventListener('DOMContentLoaded', async () => {
+    let data = await fetchData();
+    displayGridMembers(data);
+})
