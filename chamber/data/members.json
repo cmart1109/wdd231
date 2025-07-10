@@ -1,0 +1,74 @@
+{
+    "members" : [
+    {
+        "name": "BAC Credomatic",
+        "address": "Tegucigalpa, Honduras",
+        "phone": "+504 2232-2222",
+        "image": "./images/logos/bac.webp",
+        "url": "https://www.baccredomatic.com/es-hn"
+    },
+    {
+        "name": "Claro",
+        "address": "Tegucigalpa, Honduras",
+        "phone": "+504 2200-0000",
+        "image": "./images/logos/claro.webp",
+        "url": "https://www.claro.com.hn"
+    },
+    {
+        "name": "Lacthosa",
+        "address": "Tegucigalpa, Honduras",
+        "phone": "+504 2232-3333",
+        "image": "./images/logos/lacthosa.webp",
+        "url": "https://www.lacthosa.com"
+    },
+    {
+        "name": "Pepsi",
+        "address": "Tegucigalpa, Honduras",
+        "phone": "+504 2232-4444",
+        "image": "./images/logos/pepsi.webp",
+        "url": "https://mundopepsi.com/hn/#inicio"
+    },
+    {
+        "name": "Grupo Jaremar",
+        "address": "Tegucigalpa, Honduras",
+        "phone": "+504 2232-5555",
+        "image": "./images/logos/jaremar.webp",
+        "url": "https://www.jaremar.com"
+    },
+    {
+        "name": "Jetstereo",
+        "address": "Tegucigalpa, Honduras",
+        "phone": "+504 2232-5555",
+        "image": "./images/logos/jetstereo.webp",
+        "url": "https://www.jetstereo.com"
+    },
+    {
+        "name": "RadioShack",
+        "address": "Tegucigalpa, Honduras",
+        "phone": "+504 2232-4444",
+        "image": "./images/logos/radioshack.webp",
+        "url": "https://www.radioshack.com.hn"
+    },
+    {
+        "name": "Dunkin Donuts",
+        "address": "Tegucigalpa, Honduras",
+        "phone": "+504 2232-6666",
+        "image": "./images/logos/dunkin.webp",
+        "url": "https://dunkin.hn/"
+    },
+    {
+        "name": "Pizza Hut",
+        "address": "Tegucigalpa, Honduras",
+        "phone": "+504 2232-7777",
+        "image": "./images/logos/pizza.webp",
+        "url": "https://www.pizzahutonline.hn/"
+    },
+    {
+        "name": "Walmart",
+        "address": "Tegucigalpa, Honduras",
+        "phone": "+504 2232-8888",
+        "image": "./images/logos/walmart.webp",
+        "url": "https://www.walmart.com.hn"
+    }
+]
+}
