@@ -45,6 +45,7 @@ nav a:hover{
 main {
     min-height: 100vh;
     text-align: center;
+    padding: 10px;
 }
 
 footer {
@@ -53,7 +54,7 @@ footer {
     color: var(--font-color);
 }
 
-.business-container {
+.grid {
     background-color: var(--font-color);
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -80,4 +81,52 @@ footer {
 .card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
+}
+
+
+
+.table table {
+    border: 1px solid;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.toggle-container button {
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    border: none;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-container button:hover {
+    background-color: var(--tertiary-color);
+}
+
+
+tbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+
+tr:nth-child(even)
+td {
+    background-color: var(--font-alternate);
+}
+tr:nth-child(odd) {
+    background-color: white;
 }

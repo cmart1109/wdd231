@@ -44,10 +44,19 @@ function displayGridMembers(members) {
 
 function displayTableMembers(members) {
     clearContainer();
+    let table = document.createElement("table");
     container.classList.add("table");
     container.classList.remove("grid");
+    let thead = document.createElement("thead");
+    let headerRow = document.createElement("tr");
+    ["Name", "Address", "Phone", "Website"].forEach(text => {
+        let th = document.createElement("th");
+        th.textContent = text;
+        headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
     
-    let table = document.createElement("table");
     let body = document.createElement("tbody");
     table.appendChild(body);
     members.forEach(member => {

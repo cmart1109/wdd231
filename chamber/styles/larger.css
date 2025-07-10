@@ -1,0 +1,15 @@
+@media screen and (min-width: 900px) {
+    
+    
+    :root{
+        --primary-color: #111111;
+        --secondary-color: #466365;
+        --tertiary-color: #EF7B45;
+        --font-color: #e1e1e1;
+        --font-alternate: #CDEDF6;
+    }
+    
+    .business-container {
+        width: 100%;
+    }
+}
