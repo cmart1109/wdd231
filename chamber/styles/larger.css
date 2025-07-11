@@ -23,4 +23,10 @@
         overflow: hidden;
         border-radius: 12px;
     }
+
+    td, th {
+        padding: 15px 20px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
 }
