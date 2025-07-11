@@ -67,7 +67,7 @@ function displayTableMembers(members) {
         let linkCell = document.createElement("td");
         let websiteURL = document.createElement("a");
         websiteURL.setAttribute("href", member.url);
-        websiteURL.textContent = `Website: ${member.url}`;
+        websiteURL.textContent = `${member.name} Website`;
         linkCell.appendChild(websiteURL);
         nameCell.textContent = member.name;
         addressCell.textContent = member.address;

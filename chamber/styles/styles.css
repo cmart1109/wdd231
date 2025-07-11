@@ -86,12 +86,14 @@ footer {
 
 
 .table table {
-    border: 1px solid;
-    font-size: 1rem;
-    text-align: left;
-    width: 100%;
-    border-collapse: collapse;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }
+
 
 .toggle-container button {
     background-color: var(--secondary-color);
@@ -108,25 +110,25 @@ footer {
     background-color: var(--tertiary-color);
 }
 
-
-tbody {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+thead {
+  background-color: var(--primary-color, #2c3e50);
+  color: white;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: left;
+th, td {
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
-
-tr:nth-child(even)
-td {
-    background-color: var(--font-alternate);
+tbody tr:nth-child(even) {
+  background-color: var(--row-even-color, #f9f9f9);
 }
-tr:nth-child(odd) {
-    background-color: white;
+
+tbody tr:nth-child(odd) {
+  background-color: var(--row-odd-color, #ffffff);
+}
+
+tbody tr:hover {
+  background-color: var(--hover-color, #eef1f5);
+  transition: background-color 0.3s ease;
 }
