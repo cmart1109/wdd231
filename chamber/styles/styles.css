@@ -17,13 +17,23 @@ header {
     padding: 5px;
     color: var(--primary-color);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 nav {
     padding: 2px;
+    display: flex;
+    flex-direction: column;
 }
 
 nav a {
@@ -139,4 +149,32 @@ footer {
     padding: 10px 20px;
     background-color: var(--primary-color);
     color: var(--font-color);
+}
+
+#nav-bar {
+    display: none;
+    padding: 5px;
+}
+
+#nav-bar.show {
+    display: block;   
+}
+
+.hamburguer::before {
+    content: "\2630";
+}
+.hamburguer.show::before {
+    content: "X";
+}
+
+.hamburguer {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
 }
