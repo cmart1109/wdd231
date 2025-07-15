@@ -3,8 +3,6 @@ export function setTitle(course) {
   document.querySelector("#courseCode").textContent = course.code;
 }
 
-
-
 export function renderSections(sections) {
   const html = sections.map(
     (section) => `<tr>

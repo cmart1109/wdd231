@@ -18,17 +18,18 @@ const byuiCourse = {
       instructor: "Sister Smith",
     },
   ],
-  changeEnrollment: function (sectionNumber, add = true) {
-      (section) => section.sectionNumber == sectionNumber
-    if (sectionIndex >= 0) {
-      if (add) {
-        this.sections[sectionIndex].enrolled++;
-      } else {
-        this.sections[sectionIndex].enrolled--;
-      }
-      renderSections(this.sections);
+changeEnrollment: function (sectionNumber, add = true) {
+  const sectionIndex = this.sections.findIndex(
+    (section) => section.sectionNumber == sectionNumber
+  );
+  if (sectionIndex >= 0) {
+    if (add) {
+      this.sections[sectionIndex].enrolled++;
+    } else {
+      this.sections[sectionIndex].enrolled--;
     }
-  },
+  }
+},
 };
 
 export default byuiCourse;
