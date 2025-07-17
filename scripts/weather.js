@@ -6,6 +6,7 @@ const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.75051&lon=6.
 
 
 
+
 async function apiFetch(){ 
     try {
       const response = await fetch(url);
