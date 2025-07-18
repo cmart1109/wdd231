@@ -5,70 +5,81 @@
         "address": "Tegucigalpa, Honduras",
         "phone": "+504 2232-2222",
         "image": "./images/logos/bac.webp",
-        "url": "https://www.baccredomatic.com/es-hn"
+        "url": "https://www.baccredomatic.com/es-hn",
+        "membership" : "gold"
     },
     {
         "name": "Claro",
         "address": "Tegucigalpa, Honduras",
         "phone": "+504 2200-0000",
         "image": "./images/logos/claro.webp",
-        "url": "https://www.claro.com.hn"
+        "url": "https://www.claro.com.hn",
+        "membership" : "silver"
+        
     },
     {
         "name": "Lacthosa",
         "address": "Tegucigalpa, Honduras",
         "phone": "+504 2232-3333",
         "image": "./images/logos/lacthosa.webp",
-        "url": "https://www.lacthosa.com"
+        "url": "https://www.lacthosa.com",
+        "membership" : "bronze"
     },
     {
         "name": "Pepsi",
         "address": "Tegucigalpa, Honduras",
         "phone": "+504 2232-4444",
         "image": "./images/logos/pepsi.webp",
-        "url": "https://mundopepsi.com/hn/#inicio"
+        "url": "https://mundopepsi.com/hn/#inicio",
+        "membership" : "gold"
     },
     {
         "name": "Grupo Jaremar",
         "address": "Tegucigalpa, Honduras",
         "phone": "+504 2232-5555",
         "image": "./images/logos/jaremar.webp",
-        "url": "https://www.jaremar.com"
+        "url": "https://www.jaremar.com",
+        "membership" : "bronze"
     },
     {
         "name": "Jetstereo",
         "address": "Tegucigalpa, Honduras",
         "phone": "+504 2232-5555",
         "image": "./images/logos/jetstereo.webp",
-        "url": "https://www.jetstereo.com"
+        "url": "https://www.jetstereo.com",
+        "membership" : "gold"
     },
     {
         "name": "RadioShack",
         "address": "Tegucigalpa, Honduras",
         "phone": "+504 2232-4444",
         "image": "./images/logos/radioshack.webp",
-        "url": "https://www.radioshack.com.hn"
+        "url": "https://www.radioshack.com.hn",
+        "membership" : "silver"
     },
     {
         "name": "Dunkin Donuts",
         "address": "Tegucigalpa, Honduras",
         "phone": "+504 2232-6666",
         "image": "./images/logos/dunkin.webp",
-        "url": "https://dunkin.hn/"
+        "url": "https://dunkin.hn/",
+        "membership" : "gold"
     },
     {
         "name": "Pizza Hut",
         "address": "Tegucigalpa, Honduras",
         "phone": "+504 2232-7777",
         "image": "./images/logos/pizza.webp",
-        "url": "https://www.pizzahutonline.hn/"
+        "url": "https://www.pizzahutonline.hn/",
+        "membership" : "bronze"
     },
     {
         "name": "Walmart",
         "address": "Tegucigalpa, Honduras",
         "phone": "+504 2232-8888",
         "image": "./images/logos/walmart.webp",
-        "url": "https://www.walmart.com.hn"
+        "url": "https://www.walmart.com.hn",
+        "membership" : "gold"
     }
 ]
 }

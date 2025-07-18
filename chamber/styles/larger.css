@@ -42,5 +42,10 @@
         flex-direction: row;
     }
 
- 
+    
+
+    .areas-box {
+        display: flex;
+        justify-content: space-around;
+    }
 }
