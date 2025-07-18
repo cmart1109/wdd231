@@ -178,3 +178,10 @@ footer {
     outline: none;
     border-radius: 5px;
 }
+
+
+/** This is the Home Section **/
+
+.hero img {
+    width: 100%;
+}
