@@ -58,9 +58,15 @@ main {
 }
 
 footer {
+    display: flex;
     background-color: var(--primary-color);
     padding: 5px;
     color: var(--font-color);
+    font-size: 12px;
+}
+
+footer p {
+    margin: 10px;
 }
 
 .grid {
@@ -142,13 +148,7 @@ tbody tr:hover {
     transition: background-color 0.3s ease;
 }
 
-footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: var(--font-color);
-}
+
 
 #nav-bar {
     display: none;
