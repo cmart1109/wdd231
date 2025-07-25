@@ -257,3 +257,86 @@ tbody tr:hover {
     width: 100%;
 }
 
+.flexbox-form {
+    display: grid;
+    margin: 2rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.flexbox-form div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.flexbox-form div input, textarea, select {
+    border: none;
+    width: 50%;
+}
+
+#submit {
+    background-color: var(--tertiary-color);
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;   
+    transition: all 0.2s ease-in-out;
+}
+
+#submit:hover {
+    background-color: var(--secondary-color);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    background-image: url("../images/hero.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+legend {
+    background-color: var(--secondary-color);
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+fieldset {
+    background-color: var(--font-color);
+    border: none;
+    min-height: 100vh;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.form-aside h1 {
+    background-color: var(--secondary-color);
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.membership-card {
+    background-color: white;
+    margin: 2rem;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.membership-card h2 {
+    background-color: var(--tertiary-color);
+}
+
+.membership-card p, .membership-card h2 {
+    padding-left: 10px;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Christian Martinez">
+    <meta name="description" content="This is the home page of the chamber project, from Christian Martinez - WDD231">
+    
+    <title>Home - HCCI Chamber of Commerce </title>
+    
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Business Directory - Chamber Project">
+    <meta property="og:description" content="Discover the innovative world of the Chamber Project and shop everything related to local businesses, plus explore accessories, entertainment, and expert device support.">
+    <meta property="og:url" content="https://cmart1109.github.io/wdd231/chamber/directory.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://cmart1109.github.io/wdd231/chamber/images/logos/hcci.webp"/>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Chamber Project">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>HCCI</h1>
+            <button id="nav-button" class="hamburguer" aria-label="navigation"></button>
+        </div>
+        <div id="nav-bar">
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="#">Discover</a>
+                <a href="./directory.html">Directory</a>
+                <a href="#" class="active">Join</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="form">
+            <div class="form-container">
+                <form action="get">
+                    <fieldset>
+                        <legend>Join the Chamber</legend>
+                        <div class="flexbox-form">
+                            <div>
+                                <label for="name">First Name:</label>
+                                <input type="text" id="name" name="name" autocomplete="on">
+                            </div>
+                            <div>
+                                <label for="lname">Last Name:</label>
+                                <input type="text" id="lname" name="lname" autocomplete="name">
+                            </div>
+                            <div>
+                                <label for="organization">Organizational Title:</label>
+                                <input type="text" id="organization" name="organization" autocomplete="family-name">
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" autocomplete="email" placeholder="someone@email.org">
+                            </div>
+                            <div>
+                                <label for="telephone">Phone Number:</label>
+                                <input type="telephone" id="telephone" name="telephone" autocomplete="tel">
+                            </div>
+                            <div>
+                                <label for="business">Business´s Name</label>
+                                <input type="text" name="business" id="business" autocomplete="organization">
+                            </div>
+                            <div>
+                                <label for="membership">Membership Level:</label>
+                                <select name="membership" id="membership">
+                                    <option value="np">Non-Profit Organization</option>
+                                    <option value="bronze">Bronze Membership</option>
+                                    <option value="silver">Silver Membership</option>
+                                    <option value="gold">Gold Membership</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="description">Business's Description</label>
+                                <textarea name="description" id="description" title="Business´s Description">
+                                </textarea>
+                            </div>
+                            <input type="submit" name="submit" id="submit">
+                        </div>
+                    </fieldset>
+                </form>
+        </div>
+        <div class="form-aside">
+            <h1>Membership Benefits</h1>
+            <div class="memberships-container">
+                <div class="membership-card">
+                    <h2>Non-Profit Organization</h2>
+                    <p>✔ Free membership</p>
+                    <p>✔ Networking events</p>
+                    <p>✔ Basic business directory listing</p>
+                </div>
+                <div class="membership-card">
+                    <h2>Bronze Membership</h2>
+                    <p>✔ Everything in Non-Profit</p>
+                    <p>✔ Discounts on selected events</p>
+                    <p>✔ Access to exclusive workshops</p>
+                </div>
+                <div class="membership-card">
+                    <h2>Silver Membership</h2>
+                    <p>✔ Everything in Bronze</p>
+                    <p>✔ Priority listing in business directory</p>
+                    <p>✔ Promotion on Chamber's social media</p>
+                </div>
+                <div class="membership-card">
+                    <h2>Gold Membership</h2>
+                    <p>✔ Everything in Silver</p>
+                    <p>✔ Featured partner recognition</p>
+                    <p>✔ VIP access to major networking events</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    
+    <footer>
+        <p id="year"></p>
+        <p>Christian Martinez - WDD-231</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="./scripts/date.js"></script>
+    <script src="./scripts/home.js"></script>
+    <script src="./scripts/spotlights.js"></script>
+    <script src="./scripts/weather.js"></script>
+</body>
+</html>
