@@ -340,3 +340,24 @@ fieldset {
 .membership-card p, .membership-card h2 {
     padding-left: 10px;
 }
+
+
+.thank-you-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/hero.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.thank-you-container div {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin: 20px;
+}

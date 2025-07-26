@@ -42,25 +42,32 @@
     <main>
         <div class="form">
             <div class="form-container">
-                <form action="get">
+                <form method="get" action="thankyou.html">
                     <fieldset>
                         <legend>Join the Chamber</legend>
                         <div class="flexbox-form">
                             <div>
                                 <label for="name">First Name:</label>
-                                <input type="text" id="name" name="name" autocomplete="on">
+                                <input type="text" id="name" name="name" autocomplete="on" required>
                             </div>
                             <div>
                                 <label for="lname">Last Name:</label>
-                                <input type="text" id="lname" name="lname" autocomplete="name">
+                                <input type="text" id="lname" name="lname" autocomplete="name" required>
                             </div>
                             <div>
                                 <label for="organization">Organizational Title:</label>
-                                <input type="text" id="organization" name="organization" autocomplete="family-name">
+                                <input 
+                                    type="text" 
+                                    id="organization" 
+                                    name="title" 
+                                    autocomplete="organization-title" 
+                                    pattern="^[A-Za-z\s\-]{7,}$" 
+                                    title="Only letters, hyphens, and spaces allowed. Minimum 7 characters." 
+                                    required>
                             </div>
                             <div>
                                 <label for="email">Email</label>
-                                <input type="email" id="email" name="email" autocomplete="email" placeholder="someone@email.org">
+                                <input type="email" id="email" name="email" autocomplete="email" placeholder="someone@email.org" required>
                             </div>
                             <div>
                                 <label for="telephone">Phone Number:</label>
@@ -130,5 +137,6 @@
     <script src="./scripts/date.js"></script>
     <script src="./scripts/home.js"></script>
     <script src="./scripts/timestamp.js"></script>
+    <script src="./scripts/showinfo.js"></script>
 </body>
 </html>
