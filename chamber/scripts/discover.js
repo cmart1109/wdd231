@@ -1,5 +1,5 @@
 const gridContainer = document.querySelector('.grid-container');
-const dataUrl = "../data/locations.json";
+const dataUrl = './data/discover.json';
 
 async function fetchData(data) {
     try {
@@ -8,7 +8,7 @@ async function fetchData(data) {
             throw new Error('Network response was not ok');
         }
         const locations = await response.json();
-        displayLocations(locations);
+        displayLocations(locations.locations);
 
     } catch (error) {
         
@@ -18,9 +18,10 @@ async function fetchData(data) {
 }
 
 
-function displayLocations(locationsArray) {
+function displayLocations(array) {
     gridContainer.innerHTML = ''; 
-    locationsArray.forEach(location => {
+
+    array.forEach(location => {
         const card = document.createElement('section');
         card.classList.add('discover-card');
         const title = document.createElement('h2');
@@ -42,9 +43,9 @@ function displayLocations(locationsArray) {
         button.textContent = 'Learn More';
 
         card.appendChild(title);
-        card.appendChild(imageContainer);
         card.appendChild(address);
         card.appendChild(description);
+        card.appendChild(imageContainer);
         card.appendChild(button);
         gridContainer.appendChild(card);
     });

@@ -71,7 +71,6 @@
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
-/* Retrasos escalonados para cada tarjeta (si tienes 4) */
 .membership-card:nth-child(1) {
   animation-delay: 0.1s;
 }
@@ -90,6 +89,11 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.discover-card:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
 }
 
 }
