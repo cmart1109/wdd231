@@ -1,0 +1,58 @@
+{
+    "locations" : [
+    {
+        "name" :  "West Bay Beach",
+        "address" : "Roatán, Islas de la Bahía, Honduras",
+        "description" : "West Bay Beach is a stunning destination known for its crystal-clear waters and white sandy beaches, perfect for relaxation and water sports.",
+        "image" : "./images/discover/ds1.webp"
+    },
+    {
+        "name" :  "Copán Ruinas",
+        "address" : "Copán, Copán, Honduras",
+        "description" : "Copán Ruinas is an archaeological site of the Maya civilization, famous for its well-preserved ruins and intricate stone carvings.",
+        "image" : "./images/discover/ds2.webp"
+    },
+    {
+        "name" :  "Utila",
+        "address" : "Utila, Islas de la Bahía, Honduras",
+        "description" : "Utila is a small island known for its vibrant marine life and is a popular spot for diving and snorkeling.",
+        "image" : "./images/discover/ds3.webp"
+    },
+    {
+        "name" :  "La Ceiba",
+        "address" : "La Ceiba, Atlántida, Honduras",
+        "description" : "La Ceiba is known for its lively carnival and as a gateway to the Bay Islands, offering beautiful beaches and eco-tourism opportunities.",
+        "image" : "./images/discover/ds4.webp"
+    },
+    {
+        "name" :  "Gracias",
+        "address" : "Gracias, Lempira, Honduras",
+        "description" : "Gracias is a charming colonial town surrounded by mountains, known for its historical architecture and natural beauty.",
+        "image" : "./images/discover/ds5.webp"
+    },
+    {
+        "name" :  "Tela",
+        "address" : "Tela, Atlántida, Honduras",
+        "description" : "Tela is a coastal city known for its beautiful beaches and Caribbean culture, offering a relaxed atmosphere and water activities.",
+        "image" : "./images/discover/ds6.webp"
+    },
+    {
+        "name" :  "Comayagua",
+        "address" : "Comayagua, Comayagua, Honduras",
+        "description" : "Comayagua is a historical city known for its colonial architecture and rich cultural heritage, including the famous Comayagua Cathedral.",
+        "image" : "./images/discover/ds7.webp"
+    },
+    {
+        "name" :  "Santa Rosa de Copán",
+        "address" : "Santa Rosa de Copán, Copán, Honduras",
+        "description" : "Santa Rosa de Copán is known for its coffee production and beautiful mountainous landscapes, offering a tranquil escape.",
+        "image" : "./images/discover/ds8.webp"
+    },
+    {
+        "name" :  "Omoa",
+        "address" : "Omoa, Cortés, Honduras",
+        "description" : "Omoa is a coastal town known for its historical fort and beautiful beaches, offering a mix of culture and relaxation.",
+        "image" : "./images/discover/ds9.webp"
+    }
+    ]
+}
