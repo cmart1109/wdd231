@@ -366,7 +366,7 @@ fieldset {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     padding: 20px;
 }
 
@@ -380,7 +380,8 @@ fieldset {
     "title"
     "description"
     "img"
-    "address";
+    "address"
+    "button";
 }
 
 
@@ -396,23 +397,23 @@ fieldset {
   border-radius: 12px;
   overflow: hidden;
   text-align: center;
-  grid-area: "img";
+  grid-area: img;
 }
 
 .discover-card h2 {
-    grid-area: "title";
+    grid-area: title;
 }
 
 .discover-address {
-    grid-area: "address";
+    grid-area: address;
 }
 
 .discover-description {
-    grid-area: "description";
+    grid-area: description;
 }
 
 .discover-card button {
-    grid-area: "button";
+    grid-area: button;
 }
 
 .discover-main, .directory-main {

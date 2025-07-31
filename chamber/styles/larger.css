@@ -96,4 +96,14 @@
     transition: transform 0.3s ease-in-out;
 }
 
+.discover-card {
+  border-radius: 10px;
+  display: grid;
+  grid-template-areas: 
+    "title title title"
+    "img img description"
+    "img img address"
+    "button button button";
+}
+
 }

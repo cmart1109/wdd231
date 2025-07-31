@@ -9,8 +9,8 @@
         display: grid;
         grid-template-areas: 
         "title title title"
-        "img description description"
-        "img address address"
+        "img img description"
+        "img img address"
         "button button button";
 }
 }
