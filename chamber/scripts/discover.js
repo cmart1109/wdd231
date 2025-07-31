@@ -27,7 +27,6 @@ function displayLocations(array) {
         const title = document.createElement('h2');
         const imageContainer = document.createElement('figure');
         const image = document.createElement('img');
-        const caption = document.createElement('figcaption');
         const address = document.createElement('p');
         const description = document.createElement('p');
         const button = document.createElement('button');
@@ -35,17 +34,18 @@ function displayLocations(array) {
         image.setAttribute('src', location.image);
         image.setAttribute('alt', location.name);
         image.setAttribute('loading', 'lazy');
-        caption.textContent = location.name;
         imageContainer.appendChild(image);
-        imageContainer.appendChild(caption);
         address.textContent = location.address;
+        address.classList.add('discover-address');
         description.textContent = location.description;
+        description.classList.add('discover-description');
         button.textContent = 'Learn More';
+        button.classList.add('discover-card-button');
 
         card.appendChild(title);
-        card.appendChild(address);
         card.appendChild(description);
         card.appendChild(imageContainer);
+        card.appendChild(address);
         card.appendChild(button);
         gridContainer.appendChild(card);
     });
