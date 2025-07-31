@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #0d0d0d;
+    --secondary-color: #a259ff;
+    --tertiary-color: #0b1d3a;
+    --font-color: #f5f5f5;
+    --alternate-color: #7c7c7c;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    font-family: 'Anta', sans-serif;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+main {
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--font-color);
+}
+
+.color-palette {
+    display: flex;
+    justify-content: space-around;
+}
+
+.color-palette div {
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--font-color);
+}
+
+.primary-color {
+    background-color: var(--primary-color);
+}
+
+.secondary-color {
+    background-color: var(--secondary-color);
+}
+.third-color {
+    background-color: var(--tertiary-color);
+}
+.alternate-color {
+    background-color: var(--alternate-color);
+}
+
+.font-color{
+    background-color: var(--font-color);
+    color: var(--primary-color);
+}
