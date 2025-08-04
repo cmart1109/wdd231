@@ -7,24 +7,36 @@
 }
 
 body {
+    margin: 0;
     background-color: var(--primary-color);
     color: var(--font-color);
-    font-family: 'Anta', sans-serif;
+    font-family: 'Libertinus Serif', sans-serif;
 }
 
 .logo {
-    width: 150px;
-    height: auto;
+    font-family: 'Libre Baskerville';
+}
+
+#home-logo {
+    font-size: 4.5em;
+    text-align: center;
+    margin-top: 20px;
 }
 
 main {
-    margin: 10px;
+    padding: 10px;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-image: url('../images/header.webp');
+    background-size: cover;
+    margin: none;
+    padding: 5px;
+    border: none;
+    color: var(--primary-color);
 }
 
 nav {
@@ -37,12 +49,12 @@ nav {
 nav a {
     text-decoration: none;
     font-size: 22px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--font-color);
+    color: var(--tertiary-color);
 }
 
 .color-palette {
@@ -79,19 +91,15 @@ nav a:hover {
 }
 
 
-.movies-container {
+.books-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
 }
 
-.movies-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
 
-.movie {
+
+.book {
     border: 1px solid white;
     padding: 10px;
     border-radius: 5px;
@@ -99,4 +107,55 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.home-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+#search-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#search-form button {
+    padding: 10px 20px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#search-form button:hover {
+    background-color: var(--tertiary-color);
+    color: var(--font-color);
+}
+
+#search {
+    width: 100%;
+    padding: 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: 'Libertinus Serif';
+}
+
+footer {
+    background-color: var(--font-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
