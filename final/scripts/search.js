@@ -28,12 +28,15 @@ function displayBooks(books) {
     const image = document.createElement('img');
     const name = document.createElement('h2');
     const author = document.createElement('p');
+    const description = document.createElement('p');
     image.src = `${info.imageLinks?.thumbnail || 'default.jpg'}" alt="${info.title}`;
     name.textContent = info.title || 'Unknown Title';
     author.textContent = info.authors ? info.authors.join(', ') : 'Unknown Author';
+    description.textContent = info.description || 'No description available';
     card.appendChild(image);
     card.appendChild(name);
     card.appendChild(author);
+    card.appendChild(description);
     container.appendChild(card);
   });
 }
