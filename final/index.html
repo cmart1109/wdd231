@@ -13,16 +13,21 @@
 </head>
 <body>
     <header>
-            <h1 class="logo">NeXora</h1>
-            <nav>
-                <a href="./index.html">Home</a>
-                <a href="./categories.html">Books</a>
-                <a href="#">Orders</a>
-                <a href="#">Subscribe</a>
-            </nav>
+            <div class="header-container">
+                <h1 class="logo">NeXora</h1>
+                <button id="nav-button" class="hamburguer"></button>
+            </div>
+            <div class="nav-container">
+                <nav>
+                    <a href="./index.html">Home</a>
+                    <a href="./categories.html">Books</a>
+                    <a href="#">Orders</a>
+                    <a href="#">Subscribe</a>
+                </nav>
+            </div>
     </header>
     <main class="home-main">
-        <h1 class="logo" id="home-logo">NeXora</h1>
+        <h2>Everything you can read</h2>
         <form action="books.html" method="GET" class="search-form" id="search-form">
             <input type="text" name="q" id="search" placeholder="Search for a book..." required>
             <button type="submit">Search</button>
@@ -32,6 +37,7 @@
         <p>&copy; 2023 Nexora. All rights reserved.</p>
         <p>Created by Christian Martinez</p>
     </footer>
+    <script src="./scripts/hamburguer.js"></script>
 </body>
 
 </html>

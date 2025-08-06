@@ -13,8 +13,33 @@ body {
     font-family: 'Libertinus Serif', sans-serif;
 }
 
+.hamburguer {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: transparent;
+    color: var(--primary-color);
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.hamburguer::before {
+    content: "\2630";
+}
+.hamburguer.show::before {
+    content: "X";
+}
+
+.nav-container.show {
+    display: block;   
+}
+
 .logo {
     font-family: 'Libre Baskerville';
+    margin: 10px;
+    padding: 10px;
 }
 
 #home-logo {
@@ -27,24 +52,40 @@ main {
     padding: 10px;
 }
 
+
+
 header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     background-image: url('../images/header.webp');
     background-size: cover;
     margin: none;
-    padding: 5px;
     border: none;
     color: var(--primary-color);
     box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
 }
 
-nav {
+.header-container {
     display: flex;
-    justify-content: space-around;
-    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+}
+.nav-container {
+    background-color: var(--font-color);
+    display: none;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-container nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
 }
 
 nav a {
@@ -52,6 +93,8 @@ nav a {
     font-size: 22px;
     color: var(--primary-color);
     transition: all 0.3s ease;
+    margin: 10px;
+    padding: 5px;
 }
 
 nav a:hover {
@@ -108,11 +151,8 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    min-height: 80vh;
-    background-image: url('../images/booksrow.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 #search-form {
@@ -176,8 +216,8 @@ footer {
     padding: 1rem;
 }
 
-.cat-container::-webkit-scrollbar, .his-container::-webkit-scrollbar, .sci-container::-webkit-scrollbar {
-    display: none;
+div::-webkit-scrollbar {
+    -webkit-appearance: none;
 }
 
 .cat-container > div, .his-container > div, .sci-container > div {
