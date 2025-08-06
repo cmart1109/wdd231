@@ -36,16 +36,27 @@
 
         </div>
 
-        <h1>Science Books</h1>
+        <h1>Fantasy Books</h1>
         <div class="sci-container">
 
         </div>
     </main>
-    <script src="./scripts/books.js"></script>
-    <script src="./scripts/hamburguer.js"></script>
-</body>
     <footer>
         <p>&copy; 2023 Nexora. All rights reserved.</p>
         <p>Created by Christian Martinez</p>
     </footer>
+    <dialog id="book-details">
+        <img src="" alt="Book Cover" id="book-image">
+        <h2 id="book-title"></h2>
+        <p id="book-description"></p>
+        <h3>Author</h3>
+        <p id="book-authors"></p>
+        <h3>Publisher</h3>
+        <p id="book-publisher"></p>
+        <button class="close-dialog-button">Close</button>
+    </dialog>
+    <script src="./scripts/books.js"></script>
+    <script src="./scripts/hamburguer.js"></script>
+    <script src="./scripts/dialog.js"></script>
+</body>
 </html>

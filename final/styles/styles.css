@@ -222,10 +222,9 @@ div::-webkit-scrollbar {
 
 .book-cat {
     min-width: 180px;
-    max-width: 190px;
+    max-width: 180px;
     background-color: white;
     border-radius: 12px;
-    padding: 1rem;
     margin: 10px;
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
     text-align: center;
@@ -237,12 +236,57 @@ div::-webkit-scrollbar {
     transition: transform 0.3s ease;
 }
 
-.book-cat:hover {
-    transform: scale(1.05);
-}
+
 
 .book-cat img {
     max-width: 100%;
     border-radius: 12px;
+}
+
+.book-cat h2 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.book-cat button {
+    margin: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80%;
+    align-self: center;
+}
+
+.book-cat button:hover {
+    background-color: var(--tertiary-color);
+    color: var(--font-color);
+}
+
+/* This will be the dialog section */
+
+dialog {
+    border: 1px solid black;
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid black;
 }
 
