@@ -38,7 +38,7 @@ div::-webkit-scrollbar-track {
 }
 
 div::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color); 
+  background-color: var(--font-color); 
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
