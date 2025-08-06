@@ -60,8 +60,8 @@ header {
     justify-content: space-between;
     background-image: url('../images/header.webp');
     background-size: cover;
-    margin: none;
-    border: none;
+    margin: 0;
+    border: 0;
     color: var(--primary-color);
     box-shadow: 0 20px 15px rgba(0, 0, 0, 0.1);
 }
@@ -153,6 +153,11 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background-image: url('../images/lighthouse.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #search-form {
@@ -248,7 +253,7 @@ div::-webkit-scrollbar {
     margin: 10px 0;
 }
 
-.book-cat button {
+.book-cat button, .close-dialog-button, .subscribe-button {
     margin: 15px;
     padding: 10px;
     border: none;
@@ -257,11 +262,10 @@ div::-webkit-scrollbar {
     color: var(--primary-color);
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 80%;
     align-self: center;
 }
 
-.book-cat button:hover {
+.book-cat button:hover, .close-dialog-button:hover, .subscribe-button:hover {
     background-color: var(--tertiary-color);
     color: var(--font-color);
 }
@@ -290,3 +294,70 @@ dialog button {
     border: 1px solid black;
 }
 
+.subscribe-main {
+    min-height: 100vh;
+    text-align: center;
+    background-image: url('../images/lighthouse.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.subscribe-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding: 20px;
+
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem;
+    margin: 2.5rem;
+    align-items: center;
+    border-radius: 12px;
+    background-color: var(--primary-color);
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+}
+
+.option h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.option ul {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.prices-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.subscribe-header {
+    margin: 0;
+    padding: 1rem;
+}
+
+.subscribe-header h1, .subscribe-header h2 {
+    color: var(--font-color);
+    font-family: 'Libre Baskerville', serif;
+}
