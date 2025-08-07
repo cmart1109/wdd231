@@ -42,14 +42,71 @@ body {
     padding: 10px;
 }
 
+
+.home-hero {
+    background-image: url("../images/books.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10px;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+
+.highlights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.highlight-card {
+    background-color: white;
+    color: var(--font-color);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 2.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+
+
+.highlight-card a {
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    margin: 2rem;
+    border-radius: 55px;
+    transition: background-color 0.3s ease;
+}
+
+.highlight-card a:hover {
+    background-color: var(--tertiary-color);
+    color: var(--font-color);
+}
+
+.highlight-image {
+    width: 100%;
+}
+
 #home-logo {
     font-size: 4.5em;
     text-align: center;
     margin-top: 20px;
-}
-
-main {
-    padding: 10px;
 }
 
 
@@ -147,7 +204,7 @@ nav a:hover {
     border-radius: 12px;
 }
 
-.home-main {
+.search-main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,9 +362,12 @@ dialog button {
 }
 
 .subscribe-options {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
+    gap: 20px;
 
 }
 
@@ -321,6 +381,7 @@ dialog button {
     border-radius: 12px;
     background-color: var(--primary-color);
     box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    height: 60vh;
 }
 
 .option h3 {

@@ -27,26 +27,12 @@
                 </nav>
             </div>
     </header>
-    <main class="home-main">
-        <div class="home-hero">
-            <div class="hero-content">
-                <h2>Welcome to Nexora</h2>
-                <p>Your gateway to a world of knowledge and adventure.</p>
-            </div>
-        </div>
-        <div class="highlights">
-            <div class="highlight-card">
-                <img src="./images/cat.webp" class="highlight-image" alt="categories-image" loading="lazy">
-                <p>Discover books across various genres and topics.</p>
-                <a href="./categories.html" class="button">Browse Categories</a>
-            </div>
-            <div class="highlight-card">
-                <img src="./images/search.webp" class="highlight-image" alt="search-image" loading="lazy">
-                <p>Find your next read with our powerful search tool.</p>
-                <a href="./search.html" class="button">Search Now</a>
-            </div>
-
-        </div>
+    <main class="search-main">
+        <h2>Everything you can read</h2>
+        <form action="books.html" method="GET" class="search-form" id="search-form">
+            <input type="text" name="q" id="search" placeholder="Search for a book..." required>
+            <button type="submit">Search</button>
+        </form>
     </main>
     <footer>
         <p>&copy; 2023 Nexora. All rights reserved.</p>
