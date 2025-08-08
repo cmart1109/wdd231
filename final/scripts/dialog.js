@@ -12,6 +12,7 @@ document.querySelector('main').addEventListener('click', (event) => {
         bookTitle.textContent = event.target.dataset.title;
         bookDescription.textContent = event.target.dataset.description;
         bookImage.src = event.target.dataset.image;
+        bookImage.loading = 'lazy';
         bookAuthors.textContent = event.target.dataset.authors;
         bookPublisher.textContent = event.target.dataset.publisher;
         dialog.showModal();

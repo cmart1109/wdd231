@@ -6,12 +6,16 @@
     --alternate-color: #DAD4EF;
 }
 
+
+
 body {
     margin: 0;
     background-color: var(--primary-color);
     color: var(--font-color);
     font-family: 'Libertinus Serif', sans-serif;
 }
+
+
 
 .hamburguer {
     display: block;
@@ -259,7 +263,9 @@ footer {
     color: var(--primary-color);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 .books-main {
@@ -398,6 +404,8 @@ dialog button {
     text-align: left;
 }
 
+
+
 .prices-container {
     display: flex;
     flex-direction: row;
@@ -423,4 +431,15 @@ dialog button {
 .subscribe-header h1, .subscribe-header h2 {
     color: var(--font-color);
     font-family: 'Libre Baskerville', serif;
+}
+
+.google-books {
+    display: flex;
+    align-items: center;
+}
+
+.google-logo {
+    width: 80px;
+    height: auto;
+    margin-top: 20px;
 }

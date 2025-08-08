@@ -16,11 +16,11 @@
     <header>
             <div class="header-container">
                 <h1 class="logo">NeXora</h1>
-                <button id="nav-button" class="hamburguer"></button>
+                <button id="nav-button" class="hamburguer">\2630</button>
             </div>
             <div class="nav-container">
                 <nav aria-label="Main Navigation" id="nav-menu" class="nav-menu">
-                    <a href="./index.html">Home</a>
+                    <a href="./index.html" class="found">Home</a>
                     <a href="./search.html">Search</a>
                     <a href="./categories.html">Books</a>
                     <a href="./subscribe.html">Subscribe</a>
@@ -49,10 +49,18 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2023 Nexora. All rights reserved.</p>
-        <p>Created by Christian Martinez</p>
+        <div class="google-books">
+            <p>Powered by: Google Books API</p>
+            <img src="./images/google.png" alt="books Logo" class="google-logo" loading="lazy">
+        </div>
+
+        <p class="visits"></p>
+        <p id="last-modified"></p>
+        <p></p>
     </footer>
     <script src="./scripts/hamburguer.js"></script>
+    <script src="./scripts/visits.js"></script>
+    <script src="./scripts/date.js"></script>
 </body>
 
 </html>

@@ -50,6 +50,7 @@ function displayBooks(books, sectionContainer) {
 
         name.textContent = book.volumeInfo.title || 'Unknown Title';
         image.setAttribute('src', book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : 'https://via.placeholder.com/128x200');
+        image.loading = 'lazy';
         bookElement.appendChild(image);
         bookElement.appendChild(name);
         bookElement.appendChild(moreButton);
