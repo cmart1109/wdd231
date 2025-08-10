@@ -11,15 +11,12 @@ async function getBooks() {
         const fictionResponse = await fetch(url);
         const historyResponse = await fetch(historyUrl);
         const scienceResponse = await fetch(scienceUrl);
-
         if (!fictionResponse.ok || !historyResponse.ok || !scienceResponse.ok) {
             throw new Error("Error getting API data");
         }
-
         const fictionData = await fictionResponse.json();
         const historyData = await historyResponse.json();
         const scienceData = await scienceResponse.json();
-
         displayBooks(fictionData.items, container);
         displayBooks(historyData.items, hisContainer);
         displayBooks(scienceData.items, sciContainer);
